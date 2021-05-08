@@ -10,6 +10,7 @@ $factory->define(Detailproduit::class, function (Faker $faker) {
         'dateentree'=>$faker->datetime,
         'datesortie'=>$faker->datetime,
         'quantite'=>$faker->randomNumber,
+        'quantite'=>$faker->randomNumber,
         'Produit_id'=>Produit::get('id')->random()
     ];
 });
